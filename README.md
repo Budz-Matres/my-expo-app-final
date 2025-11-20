@@ -1,48 +1,87 @@
-# Welcome to your Expo app 👋
+#  Spotify Clone App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A full-featured **React Native / Expo** application that replicates Spotify’s design and functionality. Includes multi-screen navigation, offline caching, advanced animations, and complete accessibility support.
 
-## Get started
+---
 
-1. Install dependencies
+##  Features
 
-   ```bash
-   npm install
-   ```
+### **Core Functionality**
+- **Multi-Screen Navigation** – Profile, Settings, and Playlists via drawer navigation  
+- **Authentication System** – Login/signup flow with form validation  
+- **Offline Navigation Caching** – Persistent state using AsyncStorage  
+- **Spotify Design Language** – Dark theme UI with green accent `#1DB954`  
+- **Responsive Layout** – Works on multiple screen sizes and platforms  
 
-2. Start the app
+### **Advanced Features**
+- **Animated Drawer Navigation** with smooth transitions  
+- **Navigation State Persistence** across restarts  
+- **Haptic Feedback** for success, error, and interactions  
+- **Loading States** for async operations  
+- **Cross-Platform Support** – Web, iOS, and Android  
 
-   ```bash
-   npx expo start
-   ```
+### **Accessibility Features**
+- Screen reader support (VoiceOver/TalkBack)  
+- Dynamic font scaling support  
+- Keyboard navigation and focus management  
+- High-contrast text readability  
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+##  Screenshots & Weekly Progress
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### **📌 Week 1 – Component Showcase**
+Week 1 screenshot demonstrates:
+- Buttons  
+- Text fields  
+- Scroll views  
 
-## Get a fresh project
+### **📌 Week 2 – Accessibility Implementation**
+Screenshot shows:
+- “Add Dynamic Components” section  
+- Dynamically added button and image  
+- Accessibility-friendly UI  
 
-When you're ready, run:
+### **📌 Week 2 – Multi-Screen Navigation Demo**
+Video includes:
+- Drawer navigation  
+- Navigation persistence  
+- Smooth transitions  
 
-```bash
-npm run reset-project
-```
+### **📌 Week 3 – Advanced Navigation**
+Features implemented:
+- Gesture-based drawer (velocity & threshold handling)  
+- Drawer state saved in AsyncStorage  
+- Screen transitions:
+  - Slide (300ms) for Profile/Settings  
+  - Fade (200ms) for Sign-Up  
+  - Drawer scale animation (down to 90%)  
+- Restores last screen + drawer position on restart  
+- Error handling and fallbacks for edge cases  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### **📌 Week 4 Activity 1 – State Management**
+Uses:
+- React Hooks for local state  
+- AsyncStorage for persistent navigation data  
+- Unit + integration testing  
+- Error boundaries and consistency checks  
 
-## Learn more
+### **📌 Week 4 Activity 2 – Profile Creation Form**
+Includes:
+- Real-time profile preview  
+- Client-side validation:
+  - Username (3–20 chars, alphanumeric + underscore)  
+  - Email regex validation  
+  - Required genre selection  
+- Animated shake effect on errors  
+- Fade transitions for profile preview  
+- Haptic feedback on interactions  
+- Optimized rendering using React.memo  
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+
 
 Join our community of developers creating universal apps.
 
